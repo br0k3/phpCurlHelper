@@ -11,6 +11,7 @@ class CurlHelper {
 		$this->url = $url;
 		$this->options = $options;
 		$this->response = '';
+		$this->ch = new CurlHandle;
 	}
 	
 	public function run($url = ''){
